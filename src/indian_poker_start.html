@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li><img src="trumpCard/clover.png"></li>
+            <li><img src="trumpCard/heart.png"></li>
+            <li><img src="trumpCard/spade.png"></li>
+            <li><img src="trumpCard/diamond.png"></li>
+        </ul>
+        <div id="app" class="start_msg">インディアンポーカー</div>
+        <tr>
+            <td>
+                <button class="start_btn">
+                    <div class="btn_char">start</div>
+                </button>
+            </td>
+        </tr>
+        <ul>
+            <li><img src="trumpCard/joker1.png"></li>
+            <span class="space"></span>
+            <li><img src="trumpCard/joker2.png"></li>
+        </ul>
+    </body>
+</html>
+
+<script>
+new Vue({
+el: "#app",
+data:{
+a: "Hello Vue World",
+},
+})
+</script>
+<style lang="css" module>
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+ body{
+    background-color:rgb(3, 109, 29);
+ }
+ img{
+    width:70px;
+    height:85px;
+ }
+ ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ li{
+    list-style: none;
+ }
+
+ .start_msg{
+    text-align: center;
+    font-size: xx-large;
+    color: cornsilk;
+    font-family: 'DotGothic16';
+ }
+
+ .start_btn{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 70px;
+    background: gold;
+    border-radius:30px;/*角の半径（丸くしている） */
+ }
+ .btn_char{
+    text-align: center;
+    color:coral;
+    font-size:large;
+    font-family: 'DotGothic16';
+ }
+ .space{
+    width:140px
+ }
+ 
+ 
+</style>
