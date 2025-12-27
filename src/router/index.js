@@ -5,8 +5,8 @@ import GameView from '../views/GameView.vue'
 const routes = [
     // {path:'/', name: 'Start', component: StartView}, //local用
     // {path:'/game', name: 'Game', component: GameView},//local用
-    {path:'390a.github.io/Indian_poker/', name: 'Start', component: StartView},//github用
-    {path:'390a.github.io/Indian_poker/game', name: 'Game', component: GameView},//github用
+    {path:'/Indian_poker/', name: 'Start', component: StartView},//github用
+    {path:'/Indian_poker/game', name: 'Game', component: GameView},//github用
 ] 
 
 export default createRouter({
