@@ -1,12 +1,12 @@
 import{ createRouter, createWebHistory } from 'vue-router'
 import StartView from '../views/StartView.vue'
 import GameView from '../views/GameView.vue'
-// import Result from '../views/ResultView.vue'
 
 const routes = [
-    {path:'/', name: 'Start', component: StartView},
-    {path:'/game', name: 'Game', component: GameView},
-    // {path:'/result', name: 'Result', component: ResultView}
+    // {path:'/', name: 'Start', component: StartView}, //local用
+    // {path:'/game', name: 'Game', component: GameView},//local用
+    {path:'390a.github.io/Indian_poker/', name: 'Start', component: StartView},//github用
+    {path:'390a.github.io/Indian_poker/game', name: 'Game', component: GameView},//github用
 ] 
 
 export default createRouter({
