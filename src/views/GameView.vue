@@ -10,25 +10,25 @@
       <li>
         <img
           class="img_head"
-          src="/trumpCard/clover.png"
+          src="../trumpCard/clover.png"
         >
       </li>
       <li>
         <img
           class="img_head"
-          src="/trumpCard/heart.png"
+          src="../trumpCard/heart.png"
         >
       </li>
       <li>
         <img
           class="img_head"
-          src="/trumpCard/spade.png"
+          src="../trumpCard/spade.png"
         >
       </li>
       <li>
         <img
           class="img_head"
-          src="/trumpCard/diamond.png"
+          src="../trumpCard/diamond.png"
         >
       </li>
     </ul>
@@ -181,11 +181,11 @@
 export default {
     data: function(){
         return{
-           user_card: '/trumpCard/backSide.png' ,
-           user_selected_card: '/trumpCard/backSide.png' ,
-           cp1_card: '/trumpCard/backSide.png',
-           cp2_card: '/trumpCard/backSide.png',
-           cp3_card: '/trumpCard/backSide.png' ,
+           user_card: '../trumpCard/backSide.png' ,
+           user_selected_card: '../trumpCard/backSide.png' ,
+           cp1_card: '../trumpCard/backSide.png',
+           cp2_card: '../trumpCard/backSide.png',
+           cp3_card: '../trumpCard/backSide.png' ,
            cardArray: [],
            cardNumberArray: new Array(4),
            scoreResult: {},//スコアボード
@@ -216,7 +216,7 @@ export default {
                 
                 cardPattern = Math.floor((Math.random()*4)+1);
                 cardNumber = Math.floor((Math.random() * 13)+1);
-                card = '/trumpCard/'+cardNumber+'_'+cardPattern + '.png';
+                card = '../trumpCard/'+cardNumber+'_'+cardPattern + '.png';
        
                 if(i !== 0){
                     if(!cardArray.includes(card)){
@@ -282,7 +282,7 @@ export default {
             while(check < 1){
                 let cardPattern = Math.floor((Math.random()*4)+1);
                 let cardNumber = Math.floor((Math.random() * 13)+1);
-                cardArray[0] = '/trumpCard/'+cardNumber+'_'+cardPattern + '.png';
+                cardArray[0] = '../trumpCard/'+cardNumber+'_'+cardPattern + '.png';
                 this.cardNumberArray[0] = cardNumber;
                     
                 for(let x=1;x < 4;x++){
@@ -315,11 +315,11 @@ export default {
             this.fight_btn = false;//勝負ボタン
             this.change_btn = false;//カード変更ボタン
 
-            this.user_card='/trumpCard/backSide.png';
-            this.user_selected_card='/trumpCard/backSide.png';
-            this.cp1_card ='/trumpCard/backSide.png';
-            this.cp2_card='/trumpCard/backSide.png';
-            this.cp3_card='/trumpCard/backSide.png';
+            this.user_card='../trumpCard/backSide.png';
+            this.user_selected_card='../trumpCard/backSide.png';
+            this.cp1_card ='../trumpCard/backSide.png';
+            this.cp2_card='../trumpCard/backSide.png';
+            this.cp3_card='../trumpCard/backSide.png';
 
         },
         end: function(){

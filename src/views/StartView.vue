@@ -1,19 +1,19 @@
 <template>
   <div class="start-view">
     <ul class="suits">
-      <li><img src="/trumpCard/clover.png" alt="clover"></li>
-      <li><img src="/trumpCard/heart.png" alt="heart"></li>
-      <li><img src="/trumpCard/spade.png" alt="spade"></li>
-      <li><img src="/trumpCard/diamond.png" alt="diamond"></li>
+      <li><img src="../trumpCard/clover.png" alt="clover"></li>
+      <li><img src="../trumpCard/heart.png" alt="heart"></li>
+      <li><img src="../trumpCard/spade.png" alt="spade"></li>
+      <li><img src="../trumpCard/diamond.png" alt="diamond"></li>
     </ul>
     <div class="start_msg">Indian Poker</div>
     <button class="start_btn" @click="start">
       <span class="btn_char">START</span>
     </button>
     <ul class="jokers">
-      <li><img src="/trumpCard/joker1.png" alt="joker"></li>
+      <li><img src="../trumpCard/joker1.png" alt="joker"></li>
       <span class="space"></span>
-      <li><img src="/trumpCard/joker1.png" alt="joker"></li>
+      <li><img src="../trumpCard/joker1.png" alt="joker"></li>
     </ul>
   </div>
 </template>
