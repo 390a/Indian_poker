@@ -25,5 +25,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: rgb(3, 109, 29);
+  min-height: 100vh;
 }
 </style>
