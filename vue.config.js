@@ -3,7 +3,7 @@ const webpack = require('webpack')
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: '/Indian_poker',
+  // publicPath: '/Indian_poker',
   outputDir: 'docs',
   pages: {
     index: {
