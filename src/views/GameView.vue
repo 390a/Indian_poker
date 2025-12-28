@@ -181,11 +181,11 @@
 export default {
     data: function(){
         return{
-           user_card: '../trumpCard/backSide.png' ,
-           user_selected_card: '../trumpCard/backSide.png' ,
-           cp1_card: '../trumpCard/backSide.png',
-           cp2_card: '../trumpCard/backSide.png',
-           cp3_card: '../trumpCard/backSide.png' ,
+           user_card: process.env.BASE_URL + 'trumpCard/backSide.png' ,
+           user_selected_card: process.env.BASE_URL + 'trumpCard/backSide.png' ,
+           cp1_card: process.env.BASE_URL + 'trumpCard/backSide.png',
+           cp2_card: process.env.BASE_URL + 'trumpCard/backSide.png',
+           cp3_card: process.env.BASE_URL + 'trumpCard/backSide.png' ,
            cardArray: [],
            cardNumberArray: new Array(4),
            scoreResult: {},//スコアボード
@@ -216,7 +216,7 @@ export default {
                 
                 cardPattern = Math.floor((Math.random()*4)+1);
                 cardNumber = Math.floor((Math.random() * 13)+1);
-                card = '../trumpCard/'+cardNumber+'_'+cardPattern + '.png';
+                card = process.env.BASE_URL + 'trumpCard/'+cardNumber+'_'+cardPattern + '.png';
        
                 if(i !== 0){
                     if(!cardArray.includes(card)){
