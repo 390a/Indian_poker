@@ -319,7 +319,7 @@ export default {
             this.user_selected_card=process.env.BASE_URL + 'trumpCard/backSide.png';
             this.cp1_card =process.env.BASE_URL + 'trumpCard/backSide.png';
             this.cp2_card=process.env.BASE_URL + 'trumpCard/backSide.png';
-            this.cp3_card=process.env.BASE_URL + '/trumpCard/backSide.png';
+            this.cp3_card=process.env.BASE_URL + 'trumpCard/backSide.png';
 
         },
         end: function(){
