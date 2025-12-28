@@ -282,7 +282,7 @@ export default {
             while(check < 1){
                 let cardPattern = Math.floor((Math.random()*4)+1);
                 let cardNumber = Math.floor((Math.random() * 13)+1);
-                cardArray[0] = '../trumpCard/'+cardNumber+'_'+cardPattern + '.png';
+                cardArray[0] = process.env.BASE_URL + '/trumpCard/'+cardNumber+'_'+cardPattern + '.png';
                 this.cardNumberArray[0] = cardNumber;
                     
                 for(let x=1;x < 4;x++){
@@ -315,11 +315,11 @@ export default {
             this.fight_btn = false;//勝負ボタン
             this.change_btn = false;//カード変更ボタン
 
-            this.user_card='../trumpCard/backSide.png';
-            this.user_selected_card='../trumpCard/backSide.png';
-            this.cp1_card ='../trumpCard/backSide.png';
-            this.cp2_card='../trumpCard/backSide.png';
-            this.cp3_card='../trumpCard/backSide.png';
+            this.user_card=process.env.BASE_URL + '/trumpCard/backSide.png';
+            this.user_selected_card=process.env.BASE_URL + '/trumpCard/backSide.png';
+            this.cp1_card =process.env.BASE_URL + '/trumpCard/backSide.png';
+            this.cp2_card=process.env.BASE_URL + '/trumpCard/backSide.png';
+            this.cp3_card=process.env.BASE_URL + '/trumpCard/backSide.png';
 
         },
         end: function(){
