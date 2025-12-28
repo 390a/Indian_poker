@@ -23,7 +23,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const start = () => {
-  router.push('../game')
+  router.push('game')
 }
 </script>
 
